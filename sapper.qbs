@@ -1,6 +1,10 @@
+import qbs
+
 Application {
     name: "Sapper"
     files: ["*.cpp", "*.h"]
     Depends { name : "cpp" }
-    install: true
+    qbs.install: true
+    qbs.installDir: "sapper"
+    qbs.installPrefix: ""
 }
